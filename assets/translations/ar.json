@@ -19,5 +19,11 @@
   "please_enter_password": "يرجى إدخال كلمة المرور",
   "password_min_length": "يجب أن تتكون كلمة المرور من 6 أحرف على الأقل",
   "please_confirm_password": "يرجى تأكيد كلمة المرور",
-  "passwords_not_match": "كلمتا المرور غير متطابقتين"
+  "passwords_not_match": "كلمتا المرور غير متطابقتين",
+   "product_1":"فستان",
+  "product_2":"بلوزة",
+  "product_3":"فستان وردي",
+  "product_4":"تنورة",
+  "product_5":"تيشرت",
+  "product_6":"حقيبة"
 }

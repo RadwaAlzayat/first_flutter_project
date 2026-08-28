@@ -24,7 +24,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
-      locale: context.locale,
+      locale: context.locale,  
+      debugShowCheckedModeBanner: false,
+    theme: ThemeData(fontFamily: "Suwannaphum",),
       home: HomeScreen(),
     );
   }

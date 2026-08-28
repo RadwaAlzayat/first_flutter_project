@@ -107,7 +107,7 @@ class _ShoppingScreenState extends State<ShoppingScreen> {
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
               itemBuilder: (BuildContext context, int index) {
-                final product = products[index];
+                final offer = hotOffers[index];
                 return Card(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -117,14 +117,14 @@ class _ShoppingScreenState extends State<ShoppingScreen> {
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Image.asset(
-                            "photo.jpg",
+                            offer['image'],
                             height: 80,
                             width: 80,
                             fit: BoxFit.contain,
                           ),
                         ),
                       ),
-                      Expanded(flex: 1, child: Text(product['name']!)),
+                      Expanded(flex: 1, child: Text(offer['name']!)),
                     ],
                   ),
                 );
@@ -137,11 +137,18 @@ class _ShoppingScreenState extends State<ShoppingScreen> {
   }
 
   final List<Map> products = [
-    {'name': 'Product 1', 'image': 'assets/photo.jpg'},
-    {'name': 'Product 2', 'image': 'assets/photo.jpg'},
-    {'name': 'Product 3', 'image': 'assets/photo.jpg'},
-    {'name': 'Product 4', 'image': 'assets/photo.jpg'},
-    {'name': 'Product 5', 'image': 'assets/photo.jpg'},
-    {'name': 'Product 6', 'image': 'assets/photo.jpg'},
+    {'name': 'product_1'.tr(), 'image': 'assets/dress.jpg'},
+    {'name': 'product_2'.tr(), 'image': 'assets/Blouse.jpg'},
+    {'name': 'product_3'.tr(), 'image': 'assets/pink_dress.jpg'},
+    {'name': 'product_4'.tr(), 'image': 'assets/skirt.jpg'},
+    {'name': 'product_5'.tr(), 'image': 'assets/tshirt.jpg'},
+    {'name': 'product_6'.tr(), 'image': 'assets/bag.jpg'},
+  ];
+   final List<Map> hotOffers = [
+    {'name': 'product_1'.tr(), 'image': 'assets/dress.jpg'},
+    {'name': 'product_2'.tr(), 'image': 'assets/Blouse.jpg'},
+    {'name': 'product_3'.tr(), 'image': 'assets/pink_dress.jpg'},
+    {'name': 'product_4'.tr(), 'image': 'assets/skirt.jpg'},
+    {'name': 'product_6'.tr(), 'image': 'assets/bag.jpg'},
   ];
 }
