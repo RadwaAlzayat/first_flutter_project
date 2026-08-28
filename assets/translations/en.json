@@ -1,0 +1,22 @@
+{
+    "first_project":"My First Project",
+    "two_images":"The two images are displayed",
+  "sign_up": "Sign Up",
+  "full_name": "Full Name",
+  "email": "Email",
+  "password": "Password",
+  "confirm_password": "Confirm Password",
+  "shopping_screen":"Shopping Screen",
+  "our_products": "Our Products",
+  "hot_offers":"Hot Offers",
+  "item_added": "Item added to the cart",
+  "account_created": "Account created successfully",
+  "please_enter_full_name": "Please enter your full name",
+  "first_letter_capital": "First letter must be capital",
+  "please_enter_email": "Please enter your email",
+  "email_must_contain_at": "Email must contain @",
+  "please_enter_password": "Please enter your password",
+  "password_min_length": "Password must be at least 6 characters",
+  "please_confirm_password": "Please confirm your password",
+  "passwords_not_match": "Passwords do not match"
+}

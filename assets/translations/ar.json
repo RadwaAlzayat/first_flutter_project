@@ -1,0 +1,23 @@
+{
+     "first_project":" تطبيقي الاول",
+     "two_images":"تم عرض  صورتين",
+  "sign_up": "إنشاء حساب",
+  "full_name": "الاسم بالكامل",
+  "email": "البريد الإلكتروني",
+  "password": "كلمة المرور",
+  "confirm_password": "تأكيد كلمة المرور",
+    "shopping_screen":"شاشة التسوق",
+
+  "our_products": "منتجاتنا",
+  "hot_offers":"عروض خاصة",
+  "item_added": "تمت إضافة المنتج إلى السلة",
+  "account_created": "تم إنشاء الحساب بنجاح",
+  "please_enter_full_name": "يرجى إدخال الاسم بالكامل",
+  "first_letter_capital": "يجب أن يكون الحرف الأول حرفًا كبيرًا",
+  "please_enter_email": "يرجى إدخال البريد الإلكتروني",
+  "email_must_contain_at": "يجب أن يحتوي البريد الإلكتروني على @",
+  "please_enter_password": "يرجى إدخال كلمة المرور",
+  "password_min_length": "يجب أن تتكون كلمة المرور من 6 أحرف على الأقل",
+  "please_confirm_password": "يرجى تأكيد كلمة المرور",
+  "passwords_not_match": "كلمتا المرور غير متطابقتين"
+}
