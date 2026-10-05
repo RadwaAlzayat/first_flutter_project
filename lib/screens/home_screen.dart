@@ -1,3 +1,4 @@
+import 'package:first_flutter_project/screens/shopping_screen.dart';
 import 'package:first_flutter_project/screens/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -20,24 +21,26 @@ class HomeScreen extends StatelessWidget {
               } else {
                 context.setLocale(const Locale('en'));
               }
-              
             },
-            icon: Icon(Icons.language),
+            icon: const Icon(Icons.language),
           ),
         ],
       ),
       body: Center(
         child: Column(
           children: [
+            const SizedBox(height: 16),
             Row(
               children: [
+                // Image from the project assets
                 Image.asset(
-                  "photo.jpg",
+                  "assets/images/photo.jpg",
                   width: MediaQuery.of(context).size.width * 0.45,
                   height: 150,
                   fit: BoxFit.cover,
                 ),
                 SizedBox(width: MediaQuery.of(context).size.width * 0.1),
+                // Image from the internet
                 Image.network(
                   "https://images.stockcake.com/public/c/2/3/c23d2fe4-1e0b-4b6d-baf9-2ff1619caeb4_large/shopping-bag-exchange-stockcake.jpg",
                   width: MediaQuery.of(context).size.width * 0.45,
@@ -47,10 +50,10 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(16),
               child: Text(
                 "two_images".tr(),
-                style: TextStyle(
+                style: const TextStyle(
                   fontFamily: "Suwannaphum",
                   fontSize: 20,
                   color: Colors.deepPurpleAccent,
@@ -58,15 +61,22 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
-
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SignUpScreen()),
-                );
-              },
-              child: Text("sign_up".tr()),
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  minimumSize: const Size(200, 50),
+                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const ShoppingScreen(),
+                    ),
+                  );
+                },
+                child: Text("go_to_shopping".tr()),
+              ),
             ),
           ],
         ),
